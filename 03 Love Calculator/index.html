@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love calculator</title>
+    <style>
+        body{
+            background-color: rgb(37, 52, 52);
+            color: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            
+        }
+        .container{
+            height: 400px;
+            width: 300px;
+            background:linear-gradient(#da4453,#89216b);
+            padding: 20px;
+            border-radius: 20px;
+            
+        }
+        .container form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 50px;
+         
+        }
+        label{
+            font-weight: 700;
+            font-size: 1.3rem;
+    
+           
+
+        }
+        input{
+            width: 92%;
+            margin-top: 10px;
+            height: 30px;
+            border: none;
+            border-radius: 20px;
+            padding-left: 20px;
+            background-color: rgba(220, 115, 155, 0.514);
+            color: white;
+            font-weight: 600;
+            
+        }
+
+        h2{
+            font-size: 2rem;
+        }
+
+        
+        
+         .btn-grad {
+            padding: 8px 0;
+            border-radius: 20px;
+            background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%);
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: rgb(255, 255, 255); 
+            border: none;   
+            font-size: 1.1rem;   
+            margin-top: 20px;     
+            transition: all 0.3s ease;
+            cursor: pointer;
+          }
+
+          .btn-grad:hover {
+            background-position: right center;
+            color: #fff;
+            transform: scale(1.02);
+          }
+         
+        
+
+    </style>
+</head>
+<body>
+    <h1>Love Calculator:</h1>
+    <div class="container">
+        <form action="">
+            <div>
+                <label for="Boy">Boy:</label>
+                <input type="text" id="Boy" name="Boy" required>
+            </div>
+
+            <div>
+                <label for="Girl">Girl:</label>
+                <input type="text" name="Girl" id="Girl" required>
+            </div>
+            <button class="btn-grad" type="submit">Calculate</button>
+        </form>
+
+        <h2>Result: </h2>
+        <p class="advice"></p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

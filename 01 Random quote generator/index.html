@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes Generator</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(22, 22, 22);
+            color: #fff;
+        }
+        h1{
+            margin: 200px;
+            text-align: center;
+            font-size: 3rem;
+        }
+        #quotes{
+            text-align: center;
+            display: block;
+        }
+     button{
+        padding: 10px 20px;
+        background:rgb(0, 0, 0, 0.4);
+        backdrop-filter: blur(19px);
+        color: #fff;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        margin-top: 20px;
+     }
+     button:hover{
+        background-color: #fff;
+        color: black;
+     }
+    </style>
+</head>
+<body>
+    <h1>Programming Quotes:</h1>
+
+    <div id="quotes">
+        <h2 class="quote">"Simplicity is the soul of efficiency. – Austin Freeman"</h2>
+        <button>Click for Others</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

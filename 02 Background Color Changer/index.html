@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color Changer</title>
+    <style>
+        body{
+            background-color: rgb(26, 25, 25);
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+
+     .parents{
+        display: flex;
+        gap: 15px;
+        background:rgb(0, 0, 0, 0.6);
+        backdrop-filter: blur(6px);
+        padding: 10px 20px;
+        border-radius: 20px;
+     }
+        button{
+            padding: 8px 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="parents">
+        <button id="red" style="background-color: red;">Red</button>
+        <button id="aqua" style="background-color:aqua;">Aqua</button>
+        <button id="bisque" style="background-color:bisque;">Bisque</button>
+        <button id="orange" style="background-color: orange;">Orange</button>
+        <button id="yellow" style="background-color: yellow;">Red</button>
+        <button id="green" style="background-color: green;">Green</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
