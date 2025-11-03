@@ -1,3 +1,4 @@
+
 const greetings = [
   // Indian Languages
   { language: "Hindi", greeting: "नमस्ते" },
@@ -55,3 +56,57 @@ const greetings = [
   { language: "Norwegian", greeting: "Hei" },
   { language: "Hungarian", greeting: "Helló" }
 ];
+
+
+// console.log(greetings[0].greeting);
+
+const body = document.querySelector("body");
+// console.log(body)
+
+body.addEventListener('click', (e)=> {
+  // console.log(e.clientX, e.clientY)
+
+  const circleElement = document.createElement('div')
+  circleElement.classList.add('circle');
+ 
+  // console.log(color())
+
+  circleElement.style.backgroundColor = color();
+    
+  const randomIndex = Math.floor(Math.random() * greetings.length);
+  circleElement.textContent = greetings[randomIndex].greeting;
+
+  circleElement.style.top = `${e.clientY-25}px`
+  circleElement.style.left = `${e.clientX-25}px`
+  
+  body.append(circleElement);
+
+  setTimeout(() => {
+    circleElement.remove();
+  }, 5000);
+
+})
+
+
+
+// random color generator
+
+
+
+function color(){
+const hex = "0123456789ABCDEF";
+
+let color = "#";
+
+for(let i=0; i<6; i++){
+  color += hex[Math.floor(Math.random()*16)]
+}
+
+return color;
+}
+
+
+
+
+// console.log("hello rakib")
+
